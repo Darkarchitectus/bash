@@ -35,3 +35,46 @@ echo "$uno + $dos ="$((uno + dos))
 echo "$uno > $dos ="$((uno > dos))
 
 echo "$uno < $dos ="$((uno < dos))
+
+echo "===================================="
+
+#pedir datos
+
+nombre=""
+edad=0
+
+read -p "Ingresa tu nombre: " nombre
+read -p "Ingresa tu edad: " edad
+
+echo "Hola tu nombre es $nombre y tienes $edad anos"
+
+echo "====================================="
+
+echo "System of informations"
+echo "Give me this data"
+
+name=""
+college=""
+deagre=""
+note_math=0
+note_spain=0
+note_calc=0
+aprobe=80
+pro=3
+
+read -p "whats your name: " name
+read -p "whats your college: "  college
+read -p "whats your note_math: " note_math
+read -p "whats your note_spain: "  note_spain
+read -p "whats your note_calc: "  note_calc
+
+let  promedio=($note_math+$note_spain+$note_calc)/$pro
+echo $promedio
+
+#condicionales
+
+if (($promedio >=$aprobe)); then
+	echo "Aprobaste el curso"
+else
+	echo "No aprobaste el curso"
+fi
